@@ -5,8 +5,8 @@ from settings import api_keys
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate,MessagesPlaceholder
 from langchain_core.messages import HumanMessage,AIMessage
-from add_task import add_task
-from get_tasks import get_task
+from todo_langchain.tasks.add_task import add_task
+from todo_langchain.tasks.get_tasks import get_task
 from langchain.agents import create_openai_tools_agent, AgentExecutor
 
 tools = [add_task,get_task]
